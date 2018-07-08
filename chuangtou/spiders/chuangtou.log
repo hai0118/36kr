@@ -1,0 +1,17 @@
+2018-07-07 11:18:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.36kr.com/n/api/org/51/investment?page=1> (referer: None)
+Traceback (most recent call last):
+  File "c:\python\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\python\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "c:\python\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\python\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\python\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\DELL\Desktop\刘丙海_爬虫\chuangtou\chuangtou\spiders\ke.py", line 26, in parse
+    item['phaseId'] = []
+  File "c:\python\lib\site-packages\scrapy\item.py", line 66, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'ChuangtouItem does not support field: phaseId'
